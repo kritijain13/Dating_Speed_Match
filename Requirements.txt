@@ -1,7 +1,11 @@
 numpy
-pandas 
+pandas
 scikit-learn
-matplotlib
+mlflow
 joblib
 seaborn
-mlflow
+matplotlib
+streamlit
+fastapi
+uvicorn
+requests

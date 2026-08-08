@@ -1,0 +1,44 @@
+version: "3.9"
+
+services:
+
+  dating-backend:
+
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+
+    container_name: dating-backend
+
+    ports:
+      - "8000:8000"
+
+    networks:
+      - dating-network
+
+
+
+  dating-frontend:
+
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+
+    container_name: dating-frontend
+
+    ports:
+      - "8501:8501"
+
+    depends_on:
+      - dating-backend
+
+    networks:
+      - dating-network
+
+
+
+networks:
+
+  dating-network:
+
+    driver: bridge

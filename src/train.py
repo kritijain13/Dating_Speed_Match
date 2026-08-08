@@ -70,3 +70,4 @@ for name,algo in models.items():
 
 # print(np.isnan(x_train).sum())
 # print(np.isnan(x_test).sum())
+print(x.columns.tolist())

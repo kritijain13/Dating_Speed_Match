@@ -1,0 +1,23 @@
+artifact_path: file:C:/Users/kriti/DatingSpeedMatch/mlruns/1/models/m-f54cd90895bc4b32940611f3d46ed3e8/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.skops
+    predict_fn: predict
+    python_version: 3.14.3
+  sklearn:
+    code: null
+    pickled_model: model.skops
+    serialization_format: skops
+    sklearn_version: 1.9.0
+    skops_trusted_types: null
+mlflow_version: 3.14.0
+model_id: m-f54cd90895bc4b32940611f3d46ed3e8
+model_size_bytes: 9294
+model_uuid: m-f54cd90895bc4b32940611f3d46ed3e8
+prompts: null
+run_id: 9705ebc8e4454728b19a70d49383b7c9
+utc_time_created: '2026-08-04 13:55:11.970476'
